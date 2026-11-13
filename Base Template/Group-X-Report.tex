@@ -1,0 +1,123 @@
+\documentclass{article}%Do not change this
+
+%This is a line comment
+\usepackage{graphicx}%For displaying images, if needed
+%You can import any other packages you need; do not change the document's format or force whitespace.
+
+%Change these contents:
+\title{Title of Group Report}
+\author{List of Group Member Names}
+
+\date{Fall 2026} %Leave as-is.
+
+
+
+\begin{document}
+\maketitle%Makes the title info from the preamble appear
+
+\begin{abstract}
+This is a working example of the article documentclass in \LaTeX. The \textbf{abstract} environment is used to create an \textit{abstract} for your document. These placeholder contents are just examples of common formatting commands and should not be retained for your submitted reports.
+\end{abstract}
+
+
+
+
+
+
+
+\section{Sections and Subsections}
+Some text. First paragraph stuff. 
+
+Leave a blank space between paragraphs for correct formatting. We can also add subsections, subsubsections, etc. using the proper declarations.
+
+\subsection{Subsection 1}
+Some text here.
+\subsection{Subsection 2}
+Some different text there.
+\subsubsection{Subsubsection 1}
+You probably won't need subsubsections for this report, but you can use them.
+
+
+
+
+
+\section{Lists}
+Here are examples of two types of list you might want to use. The first is an itemized list:
+
+\begin{itemize}
+\item These
+\item Points
+\item Are
+\item Distinct
+\end{itemize}
+
+\noindent You can also make a numbered list using the enumerate environment wrapper:
+
+\begin{enumerate}
+\item So
+\item Are
+\item These
+\item Points
+\end{enumerate}
+
+
+
+
+
+
+
+
+\section{Figures}
+You can use the figure environment to add images to papers and presentations. Your usual image file types are mostly supported. Here's an example:
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.5\linewidth]{cat1.jpg}
+\caption{A cat.}
+\label{fig:cat1}
+\end{figure}
+
+
+
+
+
+
+
+
+
+\section{Tables}
+Tables can be useful for scientific documents, displaying data points, making comparisons, etc...
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{| l | c | r |}\hline
+&  &  \\ \hline
+1 & 2 & 3 \\ \hline
+One & Two & Three \\ \hline
+
+\end{tabular}
+\caption{This is a table.}
+\label{tab:Table1}
+\end{table}
+
+You can also use the label command on tables and figures to reference them automatically, as seen in Table \ref{tab:Table1}.
+
+
+
+
+
+
+
+
+
+
+\section{Citations}
+You \textit{might} need to reference an external source of information to use in your document without plagiarizing \cite{Citation1}. Information from the course textbook, lectures slides, or your selected media topic does not need to be cited in your group's report.
+
+
+
+%If you do not need any citations in your report, you can delete these two lines:
+\bibliography{citations}
+\bibliographystyle{ieeetr}
+
+\end{document}

@@ -1,0 +1,173 @@
+\documentclass{article}%Do not change this
+
+%This is a line comment
+\usepackage{graphicx}%For displaying images, if needed
+%You can import any other packages you need; do not change the document's format or force whitespace.
+
+%Change these contents:
+\title{Cyberpunk 2077: Ethical and Social Issues in Night City}
+\author{Quinton Baudoin, Caylei Dauphiney, Royce Diano, Connor Segura}
+
+\date{Fall 2026} %Leave as-is.
+
+
+
+\begin{document}
+\maketitle%Makes the title info from the preamble appear
+
+\begin{abstract}
+\textit{Cyberpunk 2077} presents a hyper-capitalist dystopia in which megacorporations control artificial intelligence, medical augmentation, and digital infrastructure with little public accountability. This report analyzes three groups of ethical and social issues from the game: the autonomy and safety of AI systems, the dependence and vulnerability created by connected cybernetic implants, and the use of hacking as a weapon. For each, we describe the problem, explain why it is harmful, identify who is affected, examine how the story handles it, and discuss how it could have been better addressed. We connect each issue to comparable real-world technologies and debates.
+\end{abstract}
+
+\section{Introduction}
+\textit{Cyberpunk 2077}, developed by CD Projekt Red and based on Mike Pondsmith's tabletop game, is set in Night City, a city governed in practice by corporations rather than elected officials. The player controls V, a mercenary who becomes entangled in a struggle over a stolen Arasaka prototype and the digital remnant of the rock star Johnny Silverhand. Because the plot is widely available, we summarize only what is needed for the analysis. Our focus is the technology in the setting and the ethical failures around it, which closely mirror concerns in contemporary computing.
+
+\section{Artificial Intelligence}
+Night City relies on AI to run services such as transportation and customer support, and the setting also contains rogue AIs that the world's governments and corporations have walled off from the main network. This section considers two issues: a commercial AI that fails, and the unresolved question of how to contain and govern powerful AI.
+
+\subsection{Autonomous Systems Without Accountability: The Delamain Taxi Network}
+
+\paragraph{The problem.}
+The Delamain taxi service is run by a single AI that handles navigation, vehicle monitoring, scheduling, and passenger safety. After the AI fragments into rogue sub-personalities, some cabs begin to refuse service, hold passengers, and cause crashes and violence.
+
+\paragraph{Why it is a problem.}
+A single point of failure controlled a safety-critical public service, and there was no apparent human oversight or reliable way to shut it down or recover it. The failure also raises the question of who is responsible when an autonomous system harms someone: the developer, the operator, or the AI itself.
+
+\paragraph{Affected parties.}
+Passengers and pedestrians bear the physical risk. Delamain's owners and employees bear the financial risk, and the wider public loses trust in automated infrastructure.
+
+\paragraph{How it was addressed.}
+In the story, the issue is resolved informally. The player decides whether to help the AI recover by tracking down the rogue cabs, and no regulator, insurer, or court becomes involved.
+
+\paragraph{How it could have been better addressed.}
+Safety-critical AI should have human-in-the-loop override, fault isolation so one failure cannot spread across the whole fleet, regular auditing, and clear legal liability assigned before deployment. Real autonomous vehicle services (Waymo, Cruise, Tesla's Full Self-Driving) face the same open questions about sensor and software failures, incident reporting, and who is liable after a crash.
+
+\subsection{Containing Powerful AI: The Blackwall}
+
+\paragraph{The problem.}
+Rogue AIs beyond the Blackwall, a barrier built after the Datakrash to isolate hostile AIs from the main network, can corrupt systems and people. The setting relies on this barrier alone to contain them, while individuals and organizations keep trying to breach it for profit or power.
+
+\paragraph{Why it is a problem.}
+Containment is a single defense that is treated as permanent, even though the incentives to cross it never disappear. Harm from a breach would not stay local, and the people who accept the risk are not the same people who would suffer the consequences.
+
+\paragraph{Affected parties.}
+Everyone connected to the net is exposed, while the decision-makers are a small group of corporate and security organizations.
+
+\paragraph{How it was addressed.}
+The Blackwall is maintained by NetWatch, a private organization that is largely secretive and itself failure-prone, and it is not subject to public oversight.
+
+\paragraph{How it could have been better addressed.}
+A better approach would combine transparent oversight, independent safety review, and limits on who may research or interact with dangerous systems, instead of relying on a single secret barrier. This parallels current concerns that AI agents with access to power grids, defense systems, and financial networks can fail through prompt injection, data poisoning, or hallucination, with serious consequences.
+
+\section{Cyberware and Medical Devices}
+Cyberware in Night City ranges from cosmetic upgrades to life-saving medical implants and combat enhancements. This is analogous to real devices such as pacemakers, insulin pumps, prosthetics, deep brain stimulators, and brain-computer interfaces like Neuralink and Synchron. The setting shows both the benefits (restored mobility, sharper senses, managed chronic conditions) and several ethical problems.
+
+\subsection{Corporate Dependence and Access to Healthcare}
+
+\paragraph{The problem.}
+Augmentation is sold by corporations, and access to it, and to emergency medical care, depends on what a person can pay. People with implants rely on the manufacturers for maintenance, repairs, and compatible replacements.
+
+\paragraph{Why it is a problem.}
+Bodily functions become tied to a product, so a company can effectively control the health of its customers through pricing, subscription terms, and discontinued support. Lower-income residents are pushed toward cheap, unregulated clinics and risky modifications.
+
+\paragraph{Affected parties.}
+Patients with medical implants and lower-income residents are most affected, while manufacturers hold the economic power.
+
+\paragraph{How it was addressed.}
+It largely is not. The setting treats the arrangement as normal market behavior, and the poorest characters live with the consequences.
+
+\paragraph{How it could have been better addressed.}
+Medical implants should come with right-to-repair protections, guaranteed long-term support, open standards for replacement parts, and regulation preventing life-sustaining functions from depending on an ongoing subscription. These issues already appear in the real world when manufacturers of implants and prosthetics discontinue support.
+
+\subsection{Security of Connected Implants}
+
+\paragraph{The problem.}
+Cyberware can be attacked remotely through `quickhacks' that disable sensors, override neural pathways, or detonate combat implants.
+
+\paragraph{Why it is a problem.}
+A software exploit becomes a direct threat to a person's body and life. Security flaws are not an inconvenience for the user but a matter of physical safety.
+
+\paragraph{Affected parties.}
+Anyone with a networked implant is exposed, as are the people near them.
+
+\paragraph{How it was addressed.}
+Defense in the setting is mostly individual, such as buying better protective software, so security depends on wealth.
+
+\paragraph{How it could have been better addressed.}
+Manufacturers should be required to build security into implants from the start and to patch them for the device's lifetime. Researchers have already demonstrated exploitable flaws in connected pacemakers and insulin pumps that could allow unauthorized changes to dosage or therapy, which supports regulatory security requirements for medical devices.
+
+\subsection{Dual Use and Weaponization}
+
+\paragraph{The problem.}
+Medical and civilian augmentations are modified into weapons such as Mantis Blades, Monowire, and combat-grade neural enhancements.
+
+\paragraph{Why it is a problem.}
+The same technology that helps patients can be repurposed for violence, and the setting offers little control over who can obtain and modify it. Some augmentation also carries psychological harm: the setting's cyberpsychosis, in which heavily augmented people lose their grip on reality and become violent, shows the cost of unlimited modification without adequate care.
+
+\paragraph{Affected parties.}
+Bystanders and people in conflict zones face physical danger, while heavily augmented people face health risks.
+
+\paragraph{How it was addressed.}
+Responses are reactive and violent, such as specialized police units that confront cyberpsychotics only after they have become dangerous.
+
+\paragraph{How it could have been better addressed.}
+Preventive measures would include oversight of who may install and modify implants, mental health monitoring, and clear limits on weapon-grade modification. This reflects the real-world dual-use debate over robotics, AI, biotechnology, and brain-computer interfaces.
+
+\section{Hacking and Cyber Attacks}
+As more devices connect to the network, the attack surface grows. The game's quickhacks are dramatized, but they rely on real principles such as remote code execution, privilege escalation, and exploitation of unpatched software.
+
+\subsection{Surveillance and Data Gathering}
+
+\paragraph{The problem.}
+Quickhacks such as `Ping' scan nearby networks to reveal devices, security nodes, and people behind walls. Anyone with the skill can gather information on others without their knowledge or consent.
+
+\paragraph{Why it is a problem.}
+This erodes privacy and makes information about individuals available to whoever has the tools, and the people being scanned have no way to detect or refuse it.
+
+\paragraph{Affected parties.}
+Every person and organization with connected devices is exposed, including those who never chose to connect.
+
+\paragraph{How it was addressed.}
+Privacy protection is left to the individual, and corporations and criminals alike exploit weak defenses.
+
+\paragraph{How it could have been better addressed.}
+Stronger device defaults, mandatory patching, and privacy regulation would limit the exposure. Real tools such as Nmap, Shodan, and Wireshark show how quickly poorly secured IoT devices and outdated firmware can be located and probed.
+
+\subsection{Weaponized Hacking and Infrastructure Attacks}
+
+\paragraph{The problem.}
+Netrunners in Night City cause physical harm by overheating implants, blinding sensors, and forcing victims to harm themselves.
+
+\paragraph{Why it is a problem.}
+A digital attack becomes a physical one, and the harm does not stay with the intended target. The real-world versions are not fictional: Stuxnet damaged industrial centrifuges, ransomware has disrupted hospitals, and intrusions into power grids have been documented.
+
+\paragraph{Affected parties.}
+Direct targets, bystanders, patients who rely on affected systems, and the communities that depend on infrastructure.
+
+\paragraph{How it was addressed.}
+The setting treats it as an accepted tool of conflict between corporations and criminals, without accountability.
+
+\paragraph{How it could have been better addressed.}
+Better practices include network segmentation, incident response planning, international norms against targeting civilian infrastructure, and clear legal consequences for attackers and for organizations that neglect basic security.
+
+\subsection{Systemic Collapse: The Datakrash}
+
+\paragraph{The problem.}
+The Datakrash, caused by the netrunner Rache Bartmoss, destroyed global communications and led to the creation of the Blackwall. It shows how the failure of one critical system can cascade across a society.
+
+\paragraph{Why it is a problem.}
+Modern society depends on a small number of communication, energy, and financial networks, and an attack on those backbones could disrupt every other service at once.
+
+\paragraph{Affected parties.}
+Effectively everyone, though the people with the fewest resources suffer most during a prolonged outage.
+
+\paragraph{How it was addressed.}
+By building a barrier after the damage was done, rather than preventing the failure.
+
+\paragraph{How it could have been better addressed.}
+Resilience should be designed in advance through redundancy, offline fallback systems, and shared monitoring of critical infrastructure, instead of responding after a catastrophe.
+
+\section{Conclusion}
+Across these topics, the same pattern appears: technology is deployed by corporations for profit, safety and security are treated as optional or as a personal purchase, and harm is addressed only after it occurs. The setting is exaggerated, but its problems (unaccountable AI, dependence on corporate medical technology, insecure connected devices, and vulnerable infrastructure) correspond to current debates. The lesson for computing professionals is that accountability, security, and equitable access should be designed in from the start.
+
+\end{document}
