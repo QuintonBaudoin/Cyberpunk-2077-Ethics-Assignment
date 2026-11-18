@@ -10,17 +10,18 @@
 
 \begin{document}
 \maketitle
+\nocite{Cyberpunk2077}
 
 \begin{abstract}
 \textit{Cyberpunk 2077} depicts a society where powerful networked technologies expose the public to risks it did not choose. This report examines accountability for artificial intelligence (AI), unequal access to safe, maintained cyberware, and hacking that threatens privacy, physical safety, and essential infrastructure. The story shows that security, oversight, and access are essential design requirements. Leaving them to individual users or addressing them only after harm occurs is not acceptable.
 \end{abstract}
 
 \section{Introduction}
-\textit{Cyberpunk 2077} \cite{Cyberpunk2077}, developed by CD Projekt Red, is set in Night City, where corporations hold immense power over technology and everyday life. Through dangerous AI, cybernetics (cyberware), and hacking, the game shows the human costs of deploying technology without adequate safeguards. These systems determine who receives their benefits and who bears their risks.
+\textit{Cyberpunk 2077}, developed by CD Projekt Red, is set in Night City, where corporations hold immense power over technology and everyday life. Through dangerous AI, cybernetics (cyberware), and hacking, the game shows the human costs of deploying technology without adequate safeguards. These systems determine who receives their benefits and who bears their risks.
 
 \section{Artificial Intelligence and Accountability}
 \subsection{The Datakrash and rogue AI}
-Before the Datakrash, corporations and governments developed powerful AI, including experimental programs and military-grade weapons, and confined some within the Old Net. Rache Bartmoss's R.A.B.I.D.S. programs corrupted the network and disrupted those safeguards, leaving rogue AIs free to operate. Some were designed as weapons; others may have changed beyond their creators' control. People who depended on the network inherited risks created by both the developers and the attacker.
+The Datakrash was a collapse of the global Net triggered by Rache Bartmoss's R.A.B.I.D.S. programs. It disrupted communications and digital services and undermined safeguards that confined powerful AIs, including experimental and military systems. Rogue AIs were left free to operate in the damaged network, exposing people who depended on it to risks they had not chosen.
 
 The Datakrash shows that secrecy and confinement do not make high-risk AI safe. A system capable of escaping its network and threatening the public is not safe to deploy unless its safeguards can withstand attacks on the surrounding infrastructure. When those safeguards fail, the consequences reach far beyond the organizations that built the systems: people who depend on the network lose data, communication, and security without having chosen to accept those risks.
 
@@ -45,7 +46,7 @@ Cyberware ranges from elective enhancements to devices that support bodily funct
 \subsubsection{Cybersecurity risks to connected implants}
 The game depicts quickhacks disabling or taking control of connected implants. The quickhacks are fictional, but the safety issue is real: when software controls a medical device, a security failure can injure its user and put nearby people at risk. Night City leaves protection largely to individuals who can afford better defenses.
 
-The FDA's 2026 guidance ties cybersecurity to device safety and quality management. It recommends assessing threats to devices and connected systems, testing security controls, documenting risks and software components, and providing information about the end of cybersecurity support when known or anticipated \cite{FDA2026}. NIST's general IoT baseline identifies data protection, interface controls, and software updates as core security capabilities \cite{NIST2020}. Such protections should be minimum expectations for connected medical devices, not premium features.
+The FDA's February 2026 guidance provides recommendations for medical-device cybersecurity design, labeling, and premarket documentation. It recommends documenting security risk management and testing that demonstrates the effectiveness of cybersecurity controls. It also recommends SBOM documentation in premarket submissions; an SBOM is required for devices that meet the statutory definition of a cyber device. FDA recommends that labeling include information about device and component cybersecurity end of support and end of life when known or anticipated \cite{FDA2026}. NISTIR 8259A is a general IoT baseline that identifies data protection, logical access to interfaces, and secure software updates as device capabilities \cite{NIST2020}. Applying these capabilities as baseline expectations for connected medical devices is a recommendation of this report.
 
 \subsubsection{Weaponization and cyberpsychosis}
 Cyberpsychosis exposes both the dangers of Night City's cyberware market and the limits of its response. The usual response is MaxTac, whose lethal force is treated as the only reliable way to stop an episode. Alternatively, Regina seeks a less lethal outcome by hiring V to subdue people experiencing cyberpsychosis alive so her contact can study their condition. This offers a chance at care, but only after a crisis and through an individual fixer, not a dependable public health system.
@@ -56,7 +57,7 @@ Prevention should come before force: Night City could cap the amount of cyberwar
 \subsection{Surveillance and unauthorized access}
 The Ping quickhack reveals nearby devices and people, enabling surveillance without their knowledge or consent. It exposes private behavior and enables targeting, including of people who never chose to connect. The collected information also enables tracking and discrimination. In the story, corporations and criminals exploit weak security while people being watched lack notice and a meaningful way to challenge how their information is used.
 
-Real devices require safeguards against unauthorized discovery and access. NIST's baseline emphasizes limiting access to device interfaces and protecting data \cite{NIST2020}. Systems must collect only necessary information, use secure defaults, and provide clear notice and meaningful control. Access to personal data must be limited, and data must not be kept longer than needed. Security alone does not make surveillance ethical: collection must be necessary, proportionate, and governed by consent and law.
+Real devices require safeguards against unauthorized discovery and access. NISTIR 8259A defines device capabilities for restricting logical access to local and network interfaces to authorized entities and protecting stored and transmitted data from unauthorized access and modification \cite{NIST2020}. These technical controls support device security; privacy practices should separately govern data collection, notice, retention, and consent. Systems should collect only necessary information, use secure defaults, and provide clear notice and meaningful control. Organizations should limit access to personal data and retain it only as long as needed. Ethical surveillance also requires collection to be necessary, proportionate, and governed by consent and law.
 
 \subsection{Physical harm and resilient services}
 Night City's netrunners use digital access to cause bodily injury and disrupt services. These attacks turn digital compromise into physical harm, putting patients, workers, bystanders, and communities that rely on essential services at risk. The Datakrash demonstrates how communication failures cascade across a digitally dependent society. By treating hacking as routine conflict, Night City normalizes attacks on civilians and leaves them with little recourse.
@@ -66,7 +67,6 @@ Resilient infrastructure requires separated critical systems, restricted access,
 \section{Conclusion}
 Across AI, cyberware, and hacking, \textit{Cyberpunk 2077} shows the cost of deploying technology without adequate safeguards: people bear risks they did not choose. The technologies are fictional; the obligations are not. Systems that affect public safety must fail safely, protect users throughout their life cycle, provide equitable access and repair, and answer to the people they affect.
 
-\clearpage
 \bibliography{citations}
 \bibliographystyle{ieeetr}
 
